@@ -1,8 +1,6 @@
-/**
-Creates a file if not exist and adds a text
-Has to add any data (text) if the file exists
+/*Will create a file if not exist and you have to wrt somrthing
+if the file already exist only add any data (text).
 */
-
 //Here we are using the fileSystem lib to show it 
 const { existsSync, appendFile, writeFile } = require('fs');
 //promissify to turn funcs that work with callbacks in promises
