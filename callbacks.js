@@ -1,6 +1,6 @@
 /**
-Creates a file if not exist and adds a text
-Has to add any data (text) if the file exists
+Will create a file if not exist and you have to wrt somrthing
+if the file already exist only add any data (text).
 */
 
 //Here we are using the fileSystem lib to show it 
@@ -11,8 +11,11 @@ const terminal = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
- 
+
+
+
 terminal.question('Wich File do u want to work with?\n', fileName => {
+    //varu
     exists(fileName, (exists) => {
         if (exists) {
             terminal.question('The file already exists! Type something to include\n', text => {
